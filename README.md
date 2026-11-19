@@ -64,3 +64,12 @@ Student card: 13% off
 
 The fixed program prints `100`.
 
+
+## Part5: prediction
+
+My prediction:
+
+- The program prints `1` and then `5`.
+- First bag: `add()` makes it 1. The setter refuses -5 because it is below 0, so it stays 1.
+- Second bag: BigBag's `add()` adds 2 each time, so two calls make 4. Then the setter sets it to 4 + 1 = 5.
+
