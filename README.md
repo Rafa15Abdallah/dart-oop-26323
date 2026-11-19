@@ -1,3 +1,7 @@
+NAME: Rafa Abdallah Mohamed Abdallah
+RegNo: 26323/2024
+
+
 # Part 1:
 There is no setter for balance because a setter would let anyone change the balance to any number they want. For example, card.balance = 1000000 would give free money, and card.balance = -500 would make the balance negative. A bus card holds money, so this must not be possible.
 
@@ -20,8 +24,9 @@ In both lines 237 * 17 is 4029. The difference is the division:
 I use ~/ in StudentCard.pay because the balance and the fare are int values in whole RWF. With my numbers, 223 * 13 ~/ 100 gives a discount of 28 RWF. If I used /, I would get 28.99, which is a double. Dart would give an error on int off = fare * _discount / 100; because a double cannot be stored in an int, and a bus card cannot hold part of a franc.
 
 
-# Part3: Output of main.dart
+## Part3: Output of main.dart
 
+```
 Error: name too short
 Owner: Rafa | Balance: 1230 RWF
 Owner: Rafa Abdallah Mohamed Abdallah | Balance: 1230 RWF
@@ -34,3 +39,4 @@ Student discount: 28 RWF
 Paid 195 RWF
 Owner: Rafa Abdallah Mohamed Abdallah | Balance: 1035 RWF
 Student card: 13% off
+```
