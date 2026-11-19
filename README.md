@@ -73,3 +73,14 @@ My prediction:
 - First bag: `add()` makes it 1. The setter refuses -5 because it is below 0, so it stays 1.
 - Second bag: BigBag's `add()` adds 2 each time, so two calls make 4. Then the setter sets it to 4 + 1 = 5.
 
+
+Real output:
+
+```
+1
+5
+```
+
+Was I right?
+Yes, I was right. The real output is 1 and then 5, the same as my prediction.
+
