@@ -1,4 +1,4 @@
-//Part 4:
+// Part 4: bug hunt, all 5 bugs fixed
 class Phone {
   String _brand = '';
   int _battery = 0;
