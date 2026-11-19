@@ -1,5 +1,15 @@
-NAME: Rafa Abdallah Mohamed Abdallah
-RegNo: 26323/2024
+# Dart OOP Assignment: Kigali Bus Card
+
+- **Name:** Rafa Abdallah Mohamed Abdallah
+- **Student ID:** 26323
+- **Reg No:** 26323/2024
+
+## My numbers
+
+- D = 23, L = 3
+- Starting balance = 1230 RWF
+- Bus fare = 223 RWF
+- Student discount = 13%
 
 
 # Part 1:
@@ -40,3 +50,17 @@ Paid 195 RWF
 Owner: Rafa Abdallah Mohamed Abdallah | Balance: 1035 RWF
 Student card: 13% off
 ```
+
+# Part 4: Bug table
+
+| Bug | The line | Why it is wrong (my words) | My fix |
+|---|---|---|---|
+| 1 | `String _brand;` and `int _battery;` | The fields have no starting value, and `String` and `int` cannot be empty (null) in Dart. | `String _brand = '';` and `int _battery = 0;` |
+| 2 | `SmartPhone(String brand, int battery, String system) {` | The child constructor does not build the parent `Phone`, which needs a brand and a battery. | Add `: super(brand, battery)` |
+| 3 | `@override` above `void restart()` | `@override` works only if the parent has that method, and `Phone` has no `restart`. | Remove `@override` |
+| 4 | `p.battery = 100;` | `Phone` has a getter but no setter, so I cannot assign to `battery`. | Add `set battery(int value)` that accepts only 0 to 100 |
+| 5 | `print(p.battery());` | `battery` is a getter, so it is used without `()`. | `print(p.battery);` |
+| Not a bug | `Phone p = new Phone('Tecno', 50);` | `new` is the old style but it is still valid in Dart. | (none) |
+
+The fixed program prints `100`.
+
